@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import { getGreetings } from './greetingSlice';
 export function Greeting() {
 const dispatch = useDispatch()
@@ -16,6 +17,7 @@ useEffect(() => {
       <div>{data.greetings.map(greeting =>{
         return <p key={greeting.id}>{greeting.title}</p>
       })}</div>
+      <NavLink to="/"><span>Home</span></NavLink>
     </div>
   );
 }
