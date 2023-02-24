@@ -5,7 +5,7 @@ export const Home = () => {
   return (
     <div>
         <h1>Home</h1>
-        <NavLink to="/greetings"><span>Greetings</span></NavLink>
+        <NavLink to="/greeting"><span>Greetings</span></NavLink>
     </div>
   )
 }
